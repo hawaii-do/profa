@@ -1,0 +1,53 @@
+<%= form_with(model: establishment, local: false) do |form| %>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+    <%= form.error_for :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <%= form.error_for :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :npa %>
+    <%= form.text_field :npa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :locality %>
+    <%= form.text_field :locality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone1 %>
+    <%= form.text_field :phone1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone2 %>
+    <%= form.text_field :phone2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fax %>
+    <%= form.text_field :fax %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

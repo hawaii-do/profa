@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @establishment.code %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @establishment.title %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @establishment.address %>
+</p>
+
+<p>
+  <strong>Npa:</strong>
+  <%= @establishment.npa %>
+</p>
+
+<p>
+  <strong>Locality:</strong>
+  <%= @establishment.locality %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @establishment.email %>
+</p>
+
+<p>
+  <strong>Phone1:</strong>
+  <%= @establishment.phone1 %>
+</p>
+
+<p>
+  <strong>Phone2:</strong>
+  <%= @establishment.phone2 %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @establishment.fax %>
+</p>
+
+<%= link_to 'Edit', edit_establishment_path(@establishment) %> |
+<%= link_to 'Back', establishments_path %>
